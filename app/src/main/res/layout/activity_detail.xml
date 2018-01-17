@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingRight="@dimen/detail_activity_padding_right"
+                android:paddingEnd="@dimen/detail_activity_padding_right"
+                android:paddingLeft="@dimen/detail_activity_padding_left"
+                android:paddingStart="@dimen/detail_activity_padding_left"
+                android:paddingTop="@dimen/detail_activity_top_padding"
+                android:paddingBottom="@dimen/detail_activity_padding_bottom"
+                android:textSize="@dimen/detail_activity_movie_name_text_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Chappie" />
+
+            <ImageView
+                android:id="@+id/movie_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_activity_padding_left"
+                android:layout_marginStart="@dimen/detail_activity_padding_left"
+                android:layout_marginTop="@dimen/detail_activity_top_padding"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_activity_left_margin_for_release_date"
+                android:layout_marginStart="@dimen/detail_activity_left_margin_for_release_date"
+                android:layout_marginTop="@dimen/detail_activity_release_date_top_margin"
+                android:textSize="@dimen/detail_activity_text_size_for_release_date"
+                app:layout_constraintLeft_toRightOf="@+id/movie_image"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:text="2015.08.09" />
+
+            <TextView
+                android:id="@+id/votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_acitvity_rattings_top_margin"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="@+id/date"
+                app:layout_constraintTop_toBottomOf="@+id/date"
+                tools:text="8.5/10" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_of_the_divider"
+                android:layout_marginEnd="@dimen/margin_for_divider"
+                android:layout_marginLeft="@dimen/margin_for_divider"
+                android:layout_marginRight="@dimen/margin_for_divider"
+                android:layout_marginStart="@dimen/margin_for_divider"
+                android:layout_marginTop="@dimen/margin_for_divider"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_recyclerView" />
+
+            <TextView
+                android:id="@+id/discription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/detail_activity_padding_right"
+                android:layout_marginLeft="@dimen/detail_activity_padding_left"
+                android:layout_marginRight="@dimen/detail_activity_padding_right"
+                android:layout_marginStart="@dimen/detail_activity_padding_left"
+                android:layout_marginTop="@dimen/detail_activity_top_padding"
+                android:textSize="@dimen/descrption_text_size"
+                android:textStyle="italic"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                tools:text="India is my country and all indians are my brothers and sisters i love my country and i am proud of its rich and varied heritage" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_of_the_divider"
+                android:layout_marginEnd="@dimen/margin_for_divider"
+                android:layout_marginLeft="@dimen/margin_for_divider"
+                android:layout_marginRight="@dimen/margin_for_divider"
+                android:layout_marginStart="@dimen/margin_for_divider"
+                android:layout_marginTop="@dimen/margin_for_divider"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/discription"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/discription"
+                />
+
+            <TextView
+                android:id="@+id/trailer_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_activity_top_padding"
+                android:text="@string/trailer_heading"
+                android:textSize="@dimen/title_text_size"
+                app:layout_constraintLeft_toLeftOf="@+id/discription"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trailer_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_activity_recycler_view_margin"
+                android:layout_marginStart="@dimen/detail_activity_recycler_view_margin"
+                android:layout_marginTop="@dimen/detail_activity_recycler_view_margin"
+                app:layout_constraintLeft_toLeftOf="@+id/trailer_heading"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_heading" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_of_the_divider"
+                android:layout_marginEnd="@dimen/margin_for_divider"
+                android:layout_marginLeft="@dimen/margin_for_divider"
+                android:layout_marginRight="@dimen/margin_for_divider"
+                android:layout_marginStart="@dimen/margin_for_divider"
+                android:layout_marginTop="@dimen/margin_for_divider"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_image" />
+
+            <TextView
+                android:id="@+id/review_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_activity_top_padding"
+                android:text="@string/reviews_heading"
+                android:textSize="@dimen/title_text_size"
+                app:layout_constraintLeft_toLeftOf="@+id/trailer_heading"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/review_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/detail_activity_recycler_view_margin"
+                android:layout_marginLeft="@dimen/detail_activity_recycler_view_margin"
+                android:layout_marginRight="@dimen/detail_activity_recycler_view_margin"
+                android:layout_marginStart="@dimen/detail_activity_recycler_view_margin"
+                android:layout_marginTop="@dimen/detail_activity_recycler_view_margin"
+                app:layout_constraintLeft_toLeftOf="@+id/review_heading"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/review_heading" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trailer_textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="@dimen/trailer_drawable_padding"
+    android:gravity="center_vertical"
+    android:drawableLeft="@drawable/ic_play_circle_filled_black_24px"
+    android:drawableStart="@drawable/ic_play_circle_filled_black_24px"
+    android:padding="@dimen/trailer_padding"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat"
+    tools:text="TextView" />

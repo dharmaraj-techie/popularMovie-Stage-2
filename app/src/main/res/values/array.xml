@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_preference_entries">
+        <item>Popular Movies</item>
+        <item>Top Rated Movies</item>
+        <item>Favourite Movies</item>
+    </string-array>
+
+    <string-array name="list_preference_values">
+        <item>@string/orderby_popular</item>
+        <item>@string/orderby_top_rated</item>
+        <item>@string/orderby_favourite</item>
+    </string-array>
+</resources>

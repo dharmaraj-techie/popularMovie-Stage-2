@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Popular Movie</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="settings_menu_title">Settings</string>
+    <string name="orderby_lsit_preference_key">order_by_lp_key</string>
+    <string name="orderby_list_prefernce_title">Order By</string>
+
+
+    <string name="orderby_popular">popular</string>
+    <string name="orderby_top_rated">top_rated</string>
+    <string name="orderby_favourite">favourite</string>
+    <string name="no_internet_connection_error_msg">No Internet Connection</string>
+    <string name="trailer_heading">Trailers</string>
+    <string name="reviews_heading">Reviews</string>
+</resources>
